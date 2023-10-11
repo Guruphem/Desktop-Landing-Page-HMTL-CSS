@@ -1,0 +1,264 @@
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 62.5%;
+        }
+        /* Header goes here */
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem 4rem;
+        }
+        
+        h1 {
+            font-size: 1.7rem;
+        }
+        
+        h1::after {
+            content: 'Tribe';
+            color: blue;
+        }
+        
+        .navigation {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .navigation a {
+            color: rgb(46, 45, 45);
+            font-size: 1.2rem;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s ease-out;
+        }
+        
+        a.active,
+        .navigation a:hover {
+            color: orange;
+            border-bottom: 2px solid orange;
+        }
+        
+        .navigation a:active {
+            opacity: .6;
+        }
+        
+        .button {
+            background: blue;
+            border-radius: 5px;
+            color: whitesmoke;
+            font-size: 1.1rem;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: .4rem .7rem;
+            transition: all .3s ease-in-out;
+        }
+        
+        .button:hover {
+            opacity: .7;
+        }
+        
+        .button:active {
+            opacity: .5;
+        }
+        /* Header styles goes here */
+        /* Page main content styles goes here */
+        
+        main {
+            margin: 7rem 4rem 0;
+        }
+        
+        .flex-container {
+            display: flex;
+            gap: 20rem;
+            align-items: center;
+            border-bottom: 1px solid blue;
+            padding-block-end: 4rem;
+        }
+        
+        h2 {
+            width: 400px;
+            font-size: 2rem;
+        }
+        
+        .blue {
+            color: blue;
+        }
+        
+        .orange {
+            color: orange;
+        }
+        
+        article p {
+            width: 400px;
+            font-size: 1rem;
+            opacity: .6;
+            margin-block: 2rem;
+        }
+        
+        .button-flex {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .button-flex a:first-child {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            background: blue;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            padding: .3rem 2rem;
+            transition: all .3s ease-in-out;
+        }
+        
+        .fa-apple {
+            font-size: 1.2rem;
+        }
+        
+        .fade {
+            opacity: .8;
+        }
+        
+        .bold {
+            font-weight: 600;
+            font-size: .9rem;
+        }
+        
+        .button-flex a:first-child:hover {
+            opacity: .8;
+        }
+        
+        .button-flex a:first-child:active {
+            opacity: .6;
+        }
+        
+        .button-flex a:last-child {
+            display: flex;
+            align-items: center;
+            border: 1px solid blue;
+            gap: .5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: .3rem 2rem;
+            transition: all .3s ease-in-out;
+        }
+        
+        .fa-google-play {
+            color: blue;
+            font-size: 1.2rem;
+        }
+        
+        .fade-2 {
+            color: black;
+            opacity: .5;
+        }
+        
+        .bold-2 {
+            color: blue;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+        
+        .button-flex a:last-child:hover {
+            background-color: blue;
+            opacity: .8;
+        }
+        
+        .button-flex a:last-child:hover .fa-google-play,
+        .button-flex a:last-child:hover .bold-2 {
+            color: white;
+        }
+        
+        .button-flex a:last-child:hover .fade-2 {
+            color: white;
+            opacity: .8;
+        }
+        
+        .button-flex a:last-child:active {
+            opacity: .6;
+        }
+        
+        .second-child {
+            position: relative;
+        }
+        
+        .big-pic-container {
+            border: 1px dashed rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            padding: 1.5rem;
+        }
+        
+        .big-pic {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .small-pic-container {
+            width: 200px;
+            height: 200px;
+            border: 1px dashed rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            border-left-color: transparent;
+            position: absolute;
+            top: -10%;
+            right: -8%;
+        }
+        
+        .small-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 1.2rem;
+        }
+        
+        .social {
+            height: 25px;
+        }
+        
+        .gmail {
+            position: absolute;
+            top: -15%;
+            right: 55%;
+        }
+        
+        .twitter {
+            position: absolute;
+            top: 30%;
+        }
+        
+        .facebook {
+            position: absolute;
+            bottom: 5%;
+            left: 20%;
+        }
+        
+        .instagram {
+            position: absolute;
+            right: 0;
+            bottom: 30%;
+        }
+        
+        .slack {
+            position: absolute;
+            top: -13%;
+            right: 20%;
+        }
+        
+        .linkedin {
+            position: absolute;
+            top: 15%;
+            right: -12%;
+        }
